@@ -1,0 +1,281 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B1341953150E224E003AE64E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1341952150E224E003AE64E /* UIKit.framework */; };
+		B1341955150E224E003AE64E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1341954150E224E003AE64E /* Foundation.framework */; };
+		B1341957150E224E003AE64E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1341956150E224E003AE64E /* CoreGraphics.framework */; };
+		B134195D150E224E003AE64E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B134195B150E224E003AE64E /* InfoPlist.strings */; };
+		B134195F150E224E003AE64E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B134195E150E224E003AE64E /* main.m */; };
+		B1341963150E224E003AE64E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B1341962150E224E003AE64E /* AppDelegate.m */; };
+		B1341966150E224E003AE64E /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B1341964150E224E003AE64E /* MainStoryboard.storyboard */; };
+		B1341969150E224E003AE64E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B1341968150E224E003AE64E /* ViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		B134194E150E224E003AE64E /* SlinkyMinkyApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SlinkyMinkyApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B1341952150E224E003AE64E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		B1341954150E224E003AE64E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		B1341956150E224E003AE64E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		B134195A150E224E003AE64E /* SlinkyMinkyApp-Info.plist */ = {isa = PBXFileReference; path = "SlinkyMinkyApp-Info.plist"; sourceTree = "<group>"; };
+		B134195C150E224E003AE64E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		B134195E150E224E003AE64E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B1341960150E224E003AE64E /* SlinkyMinkyApp-Prefix.pch */ = {isa = PBXFileReference; path = "SlinkyMinkyApp-Prefix.pch"; sourceTree = "<group>"; };
+		B1341961150E224E003AE64E /* AppDelegate.h */ = {isa = PBXFileReference; path = AppDelegate.h; sourceTree = "<group>"; };
+		B1341962150E224E003AE64E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		B1341965150E224E003AE64E /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		B1341967150E224E003AE64E /* ViewController.h */ = {isa = PBXFileReference; path = ViewController.h; sourceTree = "<group>"; };
+		B1341968150E224E003AE64E /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B134194B150E224E003AE64E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B1341953150E224E003AE64E /* UIKit.framework in Frameworks */,
+				B1341955150E224E003AE64E /* Foundation.framework in Frameworks */,
+				B1341957150E224E003AE64E /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B1341943150E224D003AE64E = {
+			isa = PBXGroup;
+			children = (
+				B1341958150E224E003AE64E /* SlinkyMinkyApp */,
+				B1341951150E224E003AE64E /* Frameworks */,
+				B134194F150E224E003AE64E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B134194F150E224E003AE64E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B134194E150E224E003AE64E /* SlinkyMinkyApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B1341951150E224E003AE64E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B1341952150E224E003AE64E /* UIKit.framework */,
+				B1341954150E224E003AE64E /* Foundation.framework */,
+				B1341956150E224E003AE64E /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B1341958150E224E003AE64E /* SlinkyMinkyApp */ = {
+			isa = PBXGroup;
+			children = (
+				B1341961150E224E003AE64E /* AppDelegate.h */,
+				B1341962150E224E003AE64E /* AppDelegate.m */,
+				B1341964150E224E003AE64E /* MainStoryboard.storyboard */,
+				B1341967150E224E003AE64E /* ViewController.h */,
+				B1341968150E224E003AE64E /* ViewController.m */,
+				B1341959150E224E003AE64E /* Supporting Files */,
+			);
+			path = SlinkyMinkyApp;
+			sourceTree = "<group>";
+		};
+		B1341959150E224E003AE64E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B134195A150E224E003AE64E /* SlinkyMinkyApp-Info.plist */,
+				B134195B150E224E003AE64E /* InfoPlist.strings */,
+				B134195E150E224E003AE64E /* main.m */,
+				B1341960150E224E003AE64E /* SlinkyMinkyApp-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B134194D150E224E003AE64E /* SlinkyMinkyApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B134196C150E224E003AE64E /* Build configuration list for PBXNativeTarget "SlinkyMinkyApp" */;
+			buildPhases = (
+				B134194A150E224E003AE64E /* Sources */,
+				B134194B150E224E003AE64E /* Frameworks */,
+				B134194C150E224E003AE64E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SlinkyMinkyApp;
+			productName = SlinkyMinkyApp;
+			productReference = B134194E150E224E003AE64E /* SlinkyMinkyApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B1341945150E224D003AE64E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0430;
+			};
+			buildConfigurationList = B1341948150E224D003AE64E /* Build configuration list for PBXProject "SlinkyMinkyApp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = B1341943150E224D003AE64E;
+			productRefGroup = B134194F150E224E003AE64E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B134194D150E224E003AE64E /* SlinkyMinkyApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B134194C150E224E003AE64E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B134195D150E224E003AE64E /* InfoPlist.strings in Resources */,
+				B1341966150E224E003AE64E /* MainStoryboard.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B134194A150E224E003AE64E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B134195F150E224E003AE64E /* main.m in Sources */,
+				B1341963150E224E003AE64E /* AppDelegate.m in Sources */,
+				B1341969150E224E003AE64E /* ViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		B134195B150E224E003AE64E /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B134195C150E224E003AE64E /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		B1341964150E224E003AE64E /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B1341965150E224E003AE64E /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B134196A150E224E003AE64E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		B134196B150E224E003AE64E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B134196D150E224E003AE64E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SlinkyMinkyApp/SlinkyMinkyApp-Prefix.pch";
+				INFOPLIST_FILE = "SlinkyMinkyApp/SlinkyMinkyApp-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		B134196E150E224E003AE64E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SlinkyMinkyApp/SlinkyMinkyApp-Prefix.pch";
+				INFOPLIST_FILE = "SlinkyMinkyApp/SlinkyMinkyApp-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B1341948150E224D003AE64E /* Build configuration list for PBXProject "SlinkyMinkyApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B134196A150E224E003AE64E /* Debug */,
+				B134196B150E224E003AE64E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B134196C150E224E003AE64E /* Build configuration list for PBXNativeTarget "SlinkyMinkyApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B134196D150E224E003AE64E /* Debug */,
+				B134196E150E224E003AE64E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B1341945150E224D003AE64E /* Project object */;
+}
