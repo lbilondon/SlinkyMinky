@@ -110,22 +110,22 @@
 
 ////////////////////////////////////////////////////////////////////////////////
 
-/**
+/*
  * Your application should implement this delegate to receive session callbacks.
  */
 @protocol FBSessionDelegate <NSObject>
 
-/**
+/*
  * Called when the user successfully logged in.
  */
 - (void)fbDidLogin;
 
-/**
+/*
  * Called when the user dismissed the dialog without logging in.
  */
 - (void)fbDidNotLogin:(BOOL)cancelled;
 
-/**
+/*
  * Called after the access token was extended. If your application has any
  * references to the previous access token (for example, if your application
  * stores the previous access token in persistent storage), your application
@@ -135,12 +135,12 @@
 - (void)fbDidExtendToken:(NSString*)accessToken
                expiresAt:(NSDate*)expiresAt;
 
-/**
+/*
  * Called when the user logged out.
  */
 - (void)fbDidLogout;
 
-/**
+/*
  * Called when the current session has expired. This might happen when:
  *  - the access token expired
  *  - the app has been disabled

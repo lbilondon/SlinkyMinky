@@ -1,10 +1,9 @@
-//
-//  AppDelegate.m
-//  SlinkyMinkyApp
-//
-//  Created by Kaushalya Kularatnam on 12/03/2012.
-//  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
-//
+/*
+    Application Name : SlinkyMinkyApp
+    Class : MinkyDictionary.m
+    Author : Kaushalya Kularatnam
+    Description : This is the Application Delegate
+*/
 
 #import "AppDelegate.h"
 
@@ -17,7 +16,7 @@
     // Override point for customization after application launch.
     return YES;
 }
-							
+
 - (void)applicationWillResignActive:(UIApplication *)application
 {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.

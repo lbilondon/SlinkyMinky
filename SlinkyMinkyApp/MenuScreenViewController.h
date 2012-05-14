@@ -1,21 +1,18 @@
 /*
- Application Name : SlinkyMinkyApp
- Class : CarouselViewController.m
- Author : Kaushalya Kularatnam
- Description : This class populates data onto views when called from the MainCarouselView. 
+    Application Name : SlinkyMinkyApp
+    Class : MenuScreenViewController.m
+    Author : Kaushalya Kularatnam
+    Description : This is the main Menu. 
  */
 
 #import <UIKit/UIKit.h>
-//#import "MinkyScreenViewController.h"
 #import "SettingsScreenViewController.h"
-#import "InfoScreenViewController.h"
+#import "AboutScreen.h"
 #import "MainCarouselViewController.h"
-//#import "ScrollVIew.h"
-//#import "SlinkyMinkyDataGrabClass.h"
 
 @interface MenuScreenViewController : UIViewController
 
-- (IBAction)minkyButton;
+@property (nonatomic,retain) IBOutlet UIButton * setting;
 - (IBAction)settingsButton;
 - (IBAction)infoButton;
 

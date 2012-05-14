@@ -14,6 +14,8 @@
 
 @implementation AboutScreen
 
+@synthesize aboutLabel;
+
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -26,7 +28,11 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view.
+	self.aboutLabel.textColor = [UIColor blackColor];
+    [self.aboutLabel setFont:[UIFont fontWithName:@"King Cool KC" size:22]];
+    
+    self.aboutLabel.backgroundColor=[UIColor clearColor];
+    self.view.backgroundColor = [[UIColor alloc] initWithPatternImage:[UIImage imageNamed:@"AboutScreenBackGround.png"]];
 }
 
 - (void)viewDidUnload
@@ -37,7 +43,7 @@
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {
-    return (interfaceOrientation == UIInterfaceOrientationPortrait);
+    return ((interfaceOrientation == UIInterfaceOrientationLandscapeLeft) || (interfaceOrientation == UIInterfaceOrientationLandscapeRight));
 }
 
 @end

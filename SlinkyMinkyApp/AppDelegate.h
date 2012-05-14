@@ -1,10 +1,9 @@
-//
-//  AppDelegate.h
-//  SlinkyMinkyApp
-//
-//  Created by Kaushalya Kularatnam on 12/03/2012.
-//  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
-//
+/*
+    Application Name : SlinkyMinkyApp
+    Class : AppDelegate.h
+    Author : Kaushalya Kularatnam
+    Description : This is the Application Delegate
+*/
 
 #import <UIKit/UIKit.h>
 

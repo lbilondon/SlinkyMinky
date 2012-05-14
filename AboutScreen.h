@@ -10,4 +10,6 @@
 
 @interface AboutScreen : UIViewController
 
+@property(nonatomic,retain) IBOutlet UILabel * aboutLabel;
+
 @end

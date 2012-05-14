@@ -1,34 +1,45 @@
-//
-//  ViewController.m
-//  SlinkyMinkyApp
-//
-//  Created by Kaushalya Kularatnam on 12/03/2012.
-//  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
-//
+/*
+    Application Name : SlinkyMinkyApp
+    Class : MenuScreenViewController.m
+    Author : Kaushalya Kularatnam
+    Description : This class is the Main Menu. 
+*/
 
-#import "ViewController.h"
+#import "MenuScreenViewController.h"
 
-@interface ViewController ()
 
-@end
+@implementation MenuScreenViewController
 
-@implementation ViewController
-
+@synthesize setting = _setting;
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+    self.view.backgroundColor = [[UIColor alloc] initWithPatternImage:[UIImage imageNamed:@"MenuScreenViewControllerBackGround.png"]];
+    self.setting.adjustsImageWhenHighlighted = YES;
 }
 
 - (void)viewDidUnload
 {
     [super viewDidUnload];
-    // Release any retained subviews of the main view.
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {
-    return (interfaceOrientation != UIInterfaceOrientationPortraitUpsideDown);
+    return ((interfaceOrientation == UIInterfaceOrientationLandscapeLeft) || (interfaceOrientation == UIInterfaceOrientationLandscapeRight));
 }
+
+
+- (IBAction)settingsButton;
+{
+    SettingsScreenViewController *settingsScreenViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"SettingsScreenViewController"];
+    [self presentModalViewController:settingsScreenViewController animated:YES];
+}
+
+- (IBAction)infoButton;
+{
+    AboutScreen *infoScreenViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"AboutScreen"];
+    [self presentModalViewController:infoScreenViewController animated:YES];
+}
+
 
 @end

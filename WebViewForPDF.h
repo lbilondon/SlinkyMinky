@@ -10,4 +10,6 @@
 
 @interface WebViewForPDF : UIViewController
 
+@property(nonatomic,retain) IBOutlet UIWebView * webView;
+
 @end
