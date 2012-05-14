@@ -1,13 +1,13 @@
 //
-//  ViewController.h
+//  AboutScreen.h
 //  SlinkyMinkyApp
 //
-//  Created by Kaushalya Kularatnam on 12/03/2012.
+//  Created by Kaushalya Kularatnam on 14/05/2012.
 //  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface AboutScreen : UIViewController
 
 @end
