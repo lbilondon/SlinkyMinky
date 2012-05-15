@@ -6,6 +6,7 @@
 */
 
 #import <UIKit/UIKit.h>
+#import "MainCarouselViewController.h"
 
 @interface SettingsScreenViewController : UIViewController
 
@@ -36,6 +37,7 @@
 - (IBAction) hairColorBlonde;
 - (IBAction) hairColorBleachBlonde;
 - (IBAction) hairColorGinger;
+- (IBAction) showMeTheMinkyButton;
 - (UIImage *) returnSkinToneColor;
 - (int) returnHairColorNumber;
 

@@ -12,7 +12,6 @@
 #import "FBConnect.h"
 #import "WebViewForPDF.h"
 
-
 @interface DownLoadScreenViewController : UIViewController < FBSessionDelegate, FBDialogDelegate >
 {
     Facebook *facebook;

@@ -38,8 +38,10 @@
 - (IBAction)infoButton;
 {
     AboutScreen *infoScreenViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"AboutScreen"];
+    infoScreenViewController.modalTransitionStyle = UIModalTransitionStyleFlipHorizontal;
     [self presentModalViewController:infoScreenViewController animated:YES];
 }
+
 
 
 @end

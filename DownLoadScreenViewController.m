@@ -8,6 +8,7 @@
 #import "DownLoadScreenViewController.h"
 
 static int pageIndex;
+static int faceBookPermissionss = 0;
 
 @implementation DownLoadScreenViewController
 
@@ -177,17 +178,28 @@ static int pageIndex;
 
 - (IBAction)faceBookIntegration
 {
+    /*NSLog(@"permissison %i",faceBookPermissionss);
+    if (faceBookPermissionss == 0)
+    {
+    facebook = [[Facebook alloc] initWithAppId:@"319215911472589" andDelegate:self];
+        if (![facebook isSessionValid]) {
+            [facebook authorize:nil];
+        }
+
+    faceBookPermissionss = 1;
+    }
+   NSLog(@"permissison %i",faceBookPermissionss);*/
     facebook = [[Facebook alloc] initWithAppId:@"319215911472589" andDelegate:self];
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    
     if ([defaults objectForKey:@"FBAccessTokenKey"] 
         && [defaults objectForKey:@"FBExpirationDateKey"]) {
         facebook.accessToken = [defaults objectForKey:@"FBAccessTokenKey"];
         facebook.expirationDate = [defaults objectForKey:@"FBExpirationDateKey"];
     }
-    if (![facebook isSessionValid]) {
-        [facebook authorize:nil];
-    }
-    NSMutableDictionary* params1 = [NSMutableDictionary dictionaryWithObjectsAndKeys:
+    //[self fbDidLogin];
+       // This is to invite friends to the profile
+    /*NSMutableDictionary* params1 = [NSMutableDictionary dictionaryWithObjectsAndKeys:
                                    @"Let's be friends!",  @"message",
                                    facebook.accessToken, @"access_token",
                                    @"319215911472589&", @"app_id",
@@ -195,9 +207,10 @@ static int pageIndex;
     
     [facebook dialog:@"apprequests"
       andParams:params1
-    andDelegate:self];
+    andDelegate:self];*/
     
-    /*NSMutableDictionary* params = [NSMutableDictionary dictionaryWithObjectsAndKeys:
+    //This is to share your story on your news feed/profile
+    NSMutableDictionary* params = [NSMutableDictionary dictionaryWithObjectsAndKeys:
                                    @"319215911472589&", @"app_id",
                                    @"http://developers.facebook.com/docs/reference/dialogs/", @"link",
                                    @"Default.png", @"picture",
@@ -206,7 +219,8 @@ static int pageIndex;
                                    @"Test :D.", @"description",
                                    nil];
     //[facebook dialog:<#(NSString *)#> andDelegate:<#(id<FBDialogDelegate>)#>];
-    [facebook dialog:@"feed" andParams:params andDelegate:self];*/
+    [facebook dialog:@"feed" andParams:params andDelegate:self];
+    
     // Add the logout button
     UIButton *logoutButton = [UIButton buttonWithType:UIButtonTypeRoundedRect];
     logoutButton.frame = CGRectMake(40, 40, 200, 40);
@@ -215,19 +229,13 @@ static int pageIndex;
            forControlEvents:UIControlEventTouchUpInside];
     //[self.view addSubview:logoutButton];
     
-    NSArray *permissions = [[NSArray alloc] initWithObjects:
-                            @"user_likes", 
-                            @"read_stream",
-                            nil];
-    [facebook authorize:permissions];
-    
-    if (![facebook isSessionValid]) {
+    /*if (![facebook isSessionValid]) {
         NSArray *permissions = [[NSArray alloc] initWithObjects:
                                 @"user_likes", 
                                 @"read_stream",
                                 nil];
         [facebook authorize:permissions];
-    }
+    }*/
 }
 
 // Method that gets called when the logout button is pressed
@@ -254,7 +262,6 @@ static int pageIndex;
     [defaults setObject:[facebook accessToken] forKey:@"FBAccessTokenKey"];
     [defaults setObject:[facebook expirationDate] forKey:@"FBExpirationDateKey"];
     [defaults synchronize];
-    
 }
 
 - (void)fbDidNotLogin:(BOOL)cancelled

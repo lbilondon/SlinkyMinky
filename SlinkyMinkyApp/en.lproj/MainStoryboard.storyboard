@@ -12,7 +12,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="krF-8u-MP0" sceneMemberID="firstResponder"/>
                 <viewController storyboardIdentifier="MenuScreenViewController" title="MenuScreenViewController" modalTransitionStyle="flipHorizontal" id="0ip-P2-wI5" customClass="MenuScreenViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="sQv-TJ-jNY">
-                        <rect key="frame" x="0.0" y="0.0" width="480" height="300"/>
+                        <rect key="frame" x="0.0" y="20" width="480" height="300"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" reversesTitleShadowWhenHighlighted="YES" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" id="KO8-pF-p5m">
@@ -96,7 +96,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="X2H-LH-iQL" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController storyboardIdentifier="AboutScreen" title="AboutScreen" id="uyJ-EV-hG0" userLabel="AboutScreen" customClass="AboutScreen" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="mx3-rl-wCG">
-                        <rect key="frame" x="0.0" y="0.0" width="480" height="300"/>
+                        <rect key="frame" x="0.0" y="20" width="480" height="300"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="RVq-U3-467">
@@ -315,7 +315,7 @@ TA-DAH! Hello new, shiny Slinky Minky.
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6lK-lv-D2g" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController storyboardIdentifier="SettingsScreenViewController" title="SettingsScreenViewController" id="rac-dJ-whX" customClass="SettingsScreenViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="oP3-l5-8Pk">
-                        <rect key="frame" x="0.0" y="0.0" width="480" height="300"/>
+                        <rect key="frame" x="0.0" y="20" width="480" height="300"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="s6W-XI-tgH">
@@ -541,7 +541,7 @@ TA-DAH! Hello new, shiny Slinky Minky.
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="fjk-BF-xJv" kind="modal" id="Rul-Gf-Xj5"/>
+                                    <action selector="showMeTheMinkyButton" destination="rac-dJ-whX" eventType="touchUpInside" id="TIn-9Y-pjf"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -582,90 +582,12 @@ TA-DAH! Hello new, shiny Slinky Minky.
         <image name="showMeTheMinky.png" width="214" height="45"/>
         <image name="twitter.png" width="46" height="47"/>
     </resources>
-    <classes>
-        <class className="AboutScreen" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/AboutScreen.h"/>
-            <relationships>
-                <relationship kind="outlet" name="aboutLabel" candidateClass="UILabel"/>
-            </relationships>
-        </class>
-        <class className="CarouselViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/CarouselViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="minkyShapeImage" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="minkyTitleLabel" candidateClass="UIImageView"/>
-            </relationships>
-        </class>
-        <class className="DownLoadScreenViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/DownLoadScreenViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="closeButton"/>
-                <relationship kind="action" name="createPDFfromUIView1"/>
-                <relationship kind="action" name="downloadPDFButtonPressed:"/>
-                <relationship kind="action" name="faceBookIntegration"/>
-                <relationship kind="action" name="twitterIntegration"/>
-                <relationship kind="outlet" name="faceBookButton" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="pageView" candidateClass="UIView"/>
-                <relationship kind="outlet" name="twitterButton" candidateClass="UIButton"/>
-            </relationships>
-        </class>
-        <class className="MainCarouselViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/MainCarouselViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="downLoadButtonAction"/>
-                <relationship kind="outlet" name="backButton" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="downLoadButton" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="scrollView" candidateClass="UIScrollView"/>
-            </relationships>
-        </class>
-        <class className="MenuScreenViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/MenuScreenViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="infoButton"/>
-                <relationship kind="action" name="settingsButton"/>
-                <relationship kind="outlet" name="setting" candidateClass="UIButton"/>
-            </relationships>
-        </class>
-        <class className="SettingsScreenViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/SettingsScreenViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="hairColorBlack"/>
-                <relationship kind="action" name="hairColorBleachBlonde"/>
-                <relationship kind="action" name="hairColorBlonde"/>
-                <relationship kind="action" name="hairColorBrown"/>
-                <relationship kind="action" name="hairColorGinger"/>
-                <relationship kind="action" name="skinTone1"/>
-                <relationship kind="action" name="skinTone2"/>
-                <relationship kind="action" name="skinTone3"/>
-                <relationship kind="action" name="skinTone4"/>
-                <relationship kind="action" name="skinTone5"/>
-                <relationship kind="action" name="skinTone6"/>
-                <relationship kind="outlet" name="choseYourHue" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="hair" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="hairColorBlackButton" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="hairColorBleachBlondeButton" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="hairColorBlondeButton" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="hairColorBrownButton" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="hairColorGingerButton" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="skin" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="skinTone1Button" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="skinTone2Button" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="skinTone3Button" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="skinTone4Button" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="skinTone5Button" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="skinTone6Button" candidateClass="UIButton"/>
-            </relationships>
-        </class>
-        <class className="WebViewForPDF" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/WebViewForPDF.h"/>
-            <relationships>
-                <relationship kind="outlet" name="webView" candidateClass="UIWebView"/>
-            </relationships>
-        </class>
-    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation" orientation="landscapeRight"/>
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
+    <inferredMetricsTieBreakers>
+        <segue reference="bgR-jc-WGS"/>
+    </inferredMetricsTieBreakers>
 </document>

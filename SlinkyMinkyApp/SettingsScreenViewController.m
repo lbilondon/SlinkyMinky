@@ -321,4 +321,16 @@ static int myHairColorNumber;
     UIImage *chosenSkinColor = [UIImage imageNamed:@"ChosenSkinColor.png"];    
     return chosenSkinColor;
 }
+- (IBAction)showMeTheMinkyButton
+{
+    if (!(mySkinToneColor || myHairColorNumber))
+    {
+        UIAlertView * alertView = [[UIAlertView alloc] initWithTitle:@"Enter" message:@"Please enter skin tone and hair colour" delegate:self cancelButtonTitle:@"Okay" otherButtonTitles:nil];
+        [alertView show];
+    }
+    else {
+        MainCarouselViewController *carousal = [self.storyboard instantiateViewControllerWithIdentifier:@"MainCarouselViewController"];
+        [self presentModalViewController:carousal animated:YES];
+    }
+}
 @end
